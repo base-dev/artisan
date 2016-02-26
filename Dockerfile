@@ -13,9 +13,9 @@ RUN apt-get update -y && \
     php7.0-sqlite3 \
     php7.0-gd
 
-RUN mkdir -p /data/www
+RUN mkdir -p /data
 VOLUME ["/data"]
-WORKDIR /data/www
+WORKDIR /data
 
 ENTRYPOINT ["php", "artisan"]
 CMD ["--help"]

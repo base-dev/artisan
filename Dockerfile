@@ -17,5 +17,7 @@ RUN mkdir -p /data
 VOLUME ["/data"]
 WORKDIR /data
 
+EXPOSE 8000
+
 ENTRYPOINT ["php", "artisan"]
 CMD ["--help"]

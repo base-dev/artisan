@@ -24,4 +24,4 @@ WORKDIR /data
 EXPOSE 8000
 
 ENTRYPOINT ["php", "artisan"]
-CMD ["--help"]
+CMD ["serve", "--host=0.0.0.0"]

@@ -1,5 +1,8 @@
 FROM tghs/phpcli
 
+# NOTE: This image installs dependencies for artisan, but not artisan
+# itself.
+
 WORKDIR /tmp
 
 RUN apt-get update -y && \

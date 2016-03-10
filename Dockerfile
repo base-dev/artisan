@@ -23,5 +23,6 @@ WORKDIR /data
 
 EXPOSE 8000
 
-ENTRYPOINT ["php", "artisan"]
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["serve", "--host=0.0.0.0"]

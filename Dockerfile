@@ -1,4 +1,4 @@
-FROM tghs/phpcli
+FROM basedev/phpcli
 
 # NOTE: This image installs dependencies for artisan, but not artisan
 # itself.

@@ -1,4 +1,4 @@
-FROM basedev/phpcli
+FROM basedev/phpcli:0.1
 
 # NOTE: This image installs dependencies for artisan, but not artisan
 # itself.
